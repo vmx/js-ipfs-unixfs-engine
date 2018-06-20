@@ -8,7 +8,8 @@ const CID = require('cids')
 const resolvers = {
   directory: require('./dir-flat'),
   'hamt-sharded-directory': require('./dir-hamt-sharded'),
-  file: require('./file'),
+  // file: require('./file'),
+  file: require('./graphsync-file'),
   object: require('./object')
 }
 

@@ -41,6 +41,9 @@ const defaultOptions = {
   length: undefined
 }
 
+// It would be better to pass in the Graphsync connection. But atm the code
+// is centered around IPLD, hence make the connection a property (`_graphsync`)
+// of IPLD.
 module.exports = (path, dag, options) => {
   options = Object.assign({}, defaultOptions, options)
 
